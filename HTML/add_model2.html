@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta charset="utf-8" />
+<title>Webarch - Responsive Admin Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<!-- BEGIN PLUGIN CSS -->
+<link href="assets/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="assets/plugins/jquery-ricksaw-chart/css/rickshaw.css" type="text/css" media="screen" >
+<link rel="stylesheet" href="assets/plugins/jquery-morris-chart/css/morris.css" type="text/css" media="screen">
+<link href="assets/plugins/jquery-slider/css/jquery.sidr.light.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/jquery-jvectormap/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/boostrap-checkbox/css/bootstrap-checkbox.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css" rel="stylesheet" type="text/css"/>
+<!-- END PLUGIN CSS -->
+
+<!-- BEGIN CORE CSS FRAMEWsORK -->
+
+<link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
+<!-- END CORE CSS FRAMEWORK -->
+
+<!-- BEGIN CSS TEMPLATE -->
+<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
+<!-- END CSS TEMPLATE -->
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+<body class="">
+<!-- BEGIN HEADER -->
+<div class="header navbar navbar-inverse "> 
+  <!-- BEGIN TOP NAVIGATION BAR -->
+  <div class="navbar-inner">
+	<div class="header-seperation"> 
+		<ul class="nav pull-left notifcation-center" id="main-menu-toggle-wrapper" style="display:none">	
+		 <li class="dropdown"> <a id="main-menu-toggle" href="#main-menu"  class="" > <div class="iconset top-menu-toggle-white"></div> </a> </li>		 
+		</ul>
+      <!-- BEGIN LOGO -->	
+      <a href="index.html"><img src="assets/img/logo.png" class="logo" alt=""  data-src="assets/img/logo.png" data-src-retina="assets/img/logo2x.png" width="106" height="21"/></a>
+      <!-- END LOGO --> 
+      <ul class="nav pull-right notifcation-center">	
+        <li class="dropdown" id="header_task_bar"> <a href="index.html" class="dropdown-toggle active" data-toggle=""> <div class="iconset top-home"></div> </a> </li>
+      
+      </ul>
+      </div>
+      <!-- END RESPONSIVE MENU TOGGLER --> 
+      <div class="header-quick-nav" > 
+      <!-- BEGIN TOP NAVIGATION MENU -->
+	  <div class="pull-left"> 
+        <ul class="nav quick-section">
+          <li class="quicklinks"> <a href="#" class="" id="layout-condensed-toggle" >
+            <div class="iconset top-menu-toggle-dark"></div>
+            </a> </li>
+        </ul>
+        <ul class="nav quick-section">
+          <li class="quicklinks"> <a href="#" class="" >
+            <div class="iconset top-reload"></div>
+            </a> </li>
+          <li class="quicklinks"> <span class="h-seperate"></span></li>
+          <li class="quicklinks"> <a href="#" class="" >
+            <div class="iconset top-tiles"></div>
+            </a> </li>
+			<li class="m-r-10 input-prepend inside search-form no-boarder">
+				<span class="add-on"> <span class="iconset top-search"></span></span>
+				 <input name="" type="text"  class="no-boarder " placeholder="Search Dashboard" style="width:250px;">
+			</li>
+		  </ul>
+	  </div>
+	 <!-- END TOP NAVIGATION MENU -->
+	 <!-- BEGIN CHAT TOGGLER -->
+      <div class="pull-right"> 
+		<div class="chat-toggler">	
+				<a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom"  data-content='' data-toggle="dropdown" data-original-title="Notifications">
+					<div class="user-details"> 
+						<div class="username">
+							<span class="badge badge-important">3</span> 
+							Sergio <span class="bold">Peralta</span>									
+						</div>						
+					</div> 
+					<div class="iconset top-down-arrow"></div>
+				</a>	
+				<div id="notification-list" style="display:none">
+					<div style="width:300px">
+						  <div class="notification-messages info">
+									<div class="user-profile">
+										<img src="assets/img/profiles/d.jpg"  alt="" data-src="assets/img/profiles/d.jpg" data-src-retina="assets/img/profiles/d2x.jpg" width="35" height="35">
+									</div>
+									<div class="message-wrapper">
+										<div class="heading">
+											David Nester - Commented on your wall
+										</div>
+										<div class="description">
+											Meeting postponed to tomorrow
+										</div>
+										<div class="date pull-left">
+										A min ago
+										</div>										
+									</div>
+									<div class="clearfix"></div>									
+								</div>	
+							<div class="notification-messages danger">
+								<div class="iconholder">
+									<i class="icon-warning-sign"></i>
+								</div>
+								<div class="message-wrapper">
+									<div class="heading">
+										Server load limited
+									</div>
+									<div class="description">
+										Database server has reached its daily capicity
+									</div>
+									<div class="date pull-left">
+									2 mins ago
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>	
+							<div class="notification-messages success">
+								<div class="user-profile">
+									<img src="assets/img/profiles/h.jpg"  alt="" data-src="assets/img/profiles/h.jpg" data-src-retina="assets/img/profiles/h2x.jpg" width="35" height="35">
+								</div>
+								<div class="message-wrapper">
+									<div class="heading">
+										You haveve got 150 messages
+									</div>
+									<div class="description">
+										150 newly unread messages in your inbox
+									</div>
+									<div class="date pull-left">
+									An hour ago
+									</div>									
+								</div>
+								<div class="clearfix"></div>
+							</div>							
+						</div>				
+				</div>
+				<div class="profile-pic"> 
+					<img src="assets/img/profiles/ba.jpg"  alt="" data-src="assets/img/profiles/ba.jpg" data-src-retina="assets/img/profiles/ba.jpg" width="35" height="35" /> 
+				</div>       			
+			</div>
+		 <ul class="nav quick-section ">
+			<li class="quicklinks"> 
+				<a data-toggle="dropdown" class="dropdown-toggle  pull-right " href="#" id="user-options">						
+					<div class="iconset top-settings-dark "></div> 	
+				</a>
+				<ul class="dropdown-menu  pull-right" role="menu" aria-labelledby="user-options">
+                  <li><a href="user-profile.html"> My Account</a>
+                  </li>
+                  <li class="divider"></li>                
+                  <li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+               </ul>
+			</li> 
+			<li class="quicklinks"> <span class="h-seperate"></span></li> 
+			<li class="quicklinks"> 	
+			<a id="chat-menu-toggle" href="#sidr" class="chat-menu-toggle" ><div class="iconset top-chat-dark "><span class="badge badge-important hide" id="chat-message-count">1</span></div>
+			</a> 
+				<div class="simple-chat-popup chat-menu-toggle hide" >
+					<div class="simple-chat-popup-arrow"></div><div class="simple-chat-popup-inner">
+						 <div style="width:100px">
+						 <div class="semi-bold">David Nester</div>
+						 <div class="message">Hey you there </div>
+						</div>
+					</div>
+				</div>
+			</li> 
+		</ul>
+      </div>
+	   <!-- END CHAT TOGGLER -->
+      </div> 
+      <!-- END TOP NAVIGATION MENU --> 
+   
+  </div>
+  <!-- END TOP NAVIGATION BAR --> 
+</div>
+
+<!-- END HEADER --> 
+<!-- BEGIN CONTAINER -->
+<div class="page-container row"> 
+  <!-- BEGIN SIDEBAR -->
+  <div class="page-sidebar" id="main-menu"> 
+  <!-- BEGIN MINI-PROFILE -->
+  <!-- END MINI-PROFILE -->
+   
+   <!-- BEGIN SIDEBAR MENU -->	
+	<p class="menu-title">BROWSE <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
+    <ul>	
+      <li class="start active "> <a href="index.html"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span> <span class="selected"></span> <span class="badge badge-important pull-right">5</span></a> </li>     
+	  <li class=""> <a href="../frontend/index.html"> <i class="fa fa-flag"></i>  <span class="title">Featured</span></a></li>      
+      <li class=""> <a href="javascript:;"> <i class="icon-custom-thumb"></i> <span class="title">Categories</span> <span class="arrow "></span> </a>
+        <ul class="sub-menu">
+          <li > <a href="#"> Vehicles </a> </li>
+          <li > <a href="#"> Food and Drinks </a> </li>
+          <li > <a href="#"> Building and Architecture </a> </li>
+          <li > <a href="#"> Furnishings </a> </li>
+          <li > <a href="#"> Products </a> </li>
+          <li > <a href="#"> Electronics </a> </li>
+          <li > <a href="#"> Others </a> </li>
+        </ul>
+      </li>  
+      <li class=""> <a href="addmodel.html"> <i class="fa fa-plus-circle"></i>  <span class="title">Add Model</span></a></li>      
+    </ul>
+	<a href="#" class="scrollup">Scroll</a>
+	<div class="clearfix"></div>
+    <!-- END SIDEBAR MENU --> 
+  </div>
+   <div class="footer-widget">		
+	<div class="progress transparent progress-small no-radius no-margin">
+		<div class="progress-bar progress-bar-success animate-progress-bar" data-percentage="79%" style="width: 79%;"></div>		
+	</div>
+	<div class="pull-right">
+		<div class="details-status">
+		<span class="animate-number" data-value="86" data-animation-duration="560">86</span>%
+	</div>	
+	<a href="lockscreen.html"><i class="fa fa-power-off"></i></a></div>
+  </div>
+  <!-- END SIDEBAR --> 
+  <!-- BEGIN PAGE CONTAINER-->
+  <div class="page-content"> 
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <div id="portlet-config" class="modal hide">
+      <div class="modal-header">
+        <button data-dismiss="modal" class="close" type="button"></button>
+        <h3>Widget Settings</h3>
+      </div>
+      <div class="modal-body"> Widget settings form goes here </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="content">  	
+	<!-- END PAGE --> 
+	    <div class="content">
+      <ul class="breadcrumb">
+        <li>
+          <p>YOU ARE HERE</p>
+        </li>
+        <li><a href="#" class="active">Add models</a> </li>
+      </ul>
+      <div class="page-title"> <i class="icon-custom-left"></i>
+        <h3>Model <span class="semi-bold">Details</span></h3>
+      </div>  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="grid simple transparent">
+            <div class="grid-title">
+              <h4><span class="semi-bold">Wizard</span></h4>
+              <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
+            </div>
+            <div class="grid-body ">
+              <div class="row">
+                <form id="commentForm">
+                  <div id="rootwizard" class="col-md-12">
+                    <div class="form-wizard-steps">
+                      <ul class="wizard-steps">
+                        <li class="" data-target="#step1"> <a href="#tab1" data-toggle="tab"> <span class="step">1</span> <span class="title">Basic information</span> </a> </li>
+                        <li data-target="#step2" class=""> <a href="#tab2" data-toggle="tab"> <span class="step">2</span> <span class="title">Model Settings</span> </a> </li>
+                        <li data-target="#step3" class=""> <a href="#tab3" data-toggle="tab"> <span class="step">3</span> <span class="title">Upload File</span> </a> </li>
+                        <li data-target="#step4" class=""> <a href="#tab4" data-toggle="tab"> <span class="step">4</span> <span class="title">Preview </span> </a> </li>
+                       </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="tab-content transparent">
+                      <div class="tab-pane" id="tab1"> <br>
+                        <h4 class="semi-bold">Step 1 - <span class="light">Basic Information</span></h4>
+                        <br>
+                        <div class="row form-row">
+                          <div class="col-md-12">
+                            <input type="text" placeholder="Description" class="form-control no-boarder " name="txtFullName" id="txtFullName">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="tab2"> <br>
+                        <h4 class="semi-bold">Step 2 - <span class="light">Model Settings</span></h4>
+                        <br>
+                        <div class="row form-row">
+                          <div class="col-md-8">
+                            <input class="span12 tagsinput" type="text" value="Amsterdam,Washington" data-role="tagsinput" />
+                          </div>
+                        </div>                   
+                      </div>
+                      <div class="tab-pane" id="tab3"> <br>
+                        <h4 class="semi-bold">Step 3 - <span class="light">Upload File</span></h4>
+                        <br>
+                        <div class="row form-row">
+	                        <div class="col-md-6">
+				              <div class="grid simple">
+				                <div class="grid-title no-border">
+				                  <h4>Drag n Drop <span class="semi-bold">Uploader</span></h4>
+				                  <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
+				                </div>
+				                <div class="grid-body no-border">
+				                  <div class="row-fluid">
+				                    <form action="/file-upload" class="dropzone no-margin">
+				                      <div class="fallback">
+				                        <input name="file" type="file" multiple />
+				                      </div>
+				                    </form>
+				                  </div>
+				                </div>
+				              </div>
+				            </div>
+			        	</div>
+          			  </div>
+                      <div class="tab-pane" id="tab4"> <br>
+                        <h4 class="semi-bold">Step 4 - <span class="light">Preview</span></h4>
+                        <br>
+                      </div>
+                      <ul class=" wizard wizard-actions">
+                        <li class="previous first" style="display:none;"><a href="javascript:;" class="btn">&nbsp;&nbsp;First&nbsp;&nbsp;</a></li>
+                        <li class="previous"><a href="javascript:;" class="btn">&nbsp;&nbsp;Previous&nbsp;&nbsp;</a></li>
+                        <li class="next last" style="display:none;"><a href="javascript:;" class="btn btn-primary">&nbsp;&nbsp;Last&nbsp;&nbsp;</a></li>
+                        <li class="next"><a href="javascript:;" class="btn btn-primary">&nbsp;&nbsp;Next&nbsp;&nbsp;</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+<!-- BEGIN CHAT --> 
+<!-- END CHAT --> 
+<!-- END CONTAINER --> 
+</div>
+
+<!-- BEGIN CORE JS FRAMEWORK--> 
+<script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/breakpoints.js" type="text/javascript"></script> 
+<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script> 
+<!-- END CORE JS FRAMEWORK --> 
+
+<!-- BEGIN PAGE LEVEL JS --> 
+<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>  
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>  
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/jquery-block-ui/jqueryblockui.js" type="text/javascript"></script> 
+<script src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js" type="text/javascript"></script>
+<!--<script src="assets/js/form_elements.js" type="text/javascript"></script>-->
+<!-- END PAGE LEVEL PLUGINS   --> 	
+<!-- PAGE JS --> 	
+<!-- BEGIN CORE TEMPLATE JS --> 
+<script src="assets/js/core.js" type="text/javascript"></script> 
+<script src="assets/js/form_wizard.js" type="text/javascript"></script> 
+<!-- END CORE TEMPLATE JS -->
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta charset="utf-8" />
+<title>Webarch - Responsive Admin Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<!-- BEGIN PLUGIN CSS -->
+<link href="assets/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="assets/plugins/jquery-ricksaw-chart/css/rickshaw.css" type="text/css" media="screen" >
+<link rel="stylesheet" href="assets/plugins/jquery-morris-chart/css/morris.css" type="text/css" media="screen">
+<link href="assets/plugins/jquery-slider/css/jquery.sidr.light.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/jquery-jvectormap/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/boostrap-checkbox/css/bootstrap-checkbox.css" rel="stylesheet" type="text/css" media="screen"/>
+<!-- END PLUGIN CSS -->
+
+<!-- BEGIN CORE CSS FRAMEWsORK -->
+
+<link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
+<!-- END CORE CSS FRAMEWORK -->
+
+<!-- BEGIN CSS TEMPLATE -->
+<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
+<!-- END CSS TEMPLATE -->
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+<body class="">
+<!-- BEGIN HEADER -->
+<div class="header navbar navbar-inverse "> 
+  <!-- BEGIN TOP NAVIGATION BAR -->
+  <div class="navbar-inner">
+	<div class="header-seperation"> 
+		<ul class="nav pull-left notifcation-center" id="main-menu-toggle-wrapper" style="display:none">	
+		 <li class="dropdown"> <a id="main-menu-toggle" href="#main-menu"  class="" > <div class="iconset top-menu-toggle-white"></div> </a> </li>		 
+		</ul>
+      <!-- BEGIN LOGO -->	
+      <a href="index.html"><img src="assets/img/logo.png" class="logo" alt=""  data-src="assets/img/logo.png" data-src-retina="assets/img/logo2x.png" width="106" height="21"/></a>
+      <!-- END LOGO --> 
+      <ul class="nav pull-right notifcation-center">	
+        <li class="dropdown" id="header_task_bar"> <a href="index.html" class="dropdown-toggle active" data-toggle=""> <div class="iconset top-home"></div> </a> </li>
+      
+      </ul>
+      </div>
+      <!-- END RESPONSIVE MENU TOGGLER --> 
+      <div class="header-quick-nav" > 
+      <!-- BEGIN TOP NAVIGATION MENU -->
+	  <div class="pull-left"> 
+        <ul class="nav quick-section">
+          <li class="quicklinks"> <a href="#" class="" id="layout-condensed-toggle" >
+            <div class="iconset top-menu-toggle-dark"></div>
+            </a> </li>
+        </ul>
+        <ul class="nav quick-section">
+          <li class="quicklinks"> <a href="#" class="" >
+            <div class="iconset top-reload"></div>
+            </a> </li>
+          <li class="quicklinks"> <span class="h-seperate"></span></li>
+          <li class="quicklinks"> <a href="#" class="" >
+            <div class="iconset top-tiles"></div>
+            </a> </li>
+			<li class="m-r-10 input-prepend inside search-form no-boarder">
+				<span class="add-on"> <span class="iconset top-search"></span></span>
+				 <input name="" type="text"  class="no-boarder " placeholder="Search Dashboard" style="width:250px;">
+			</li>
+		  </ul>
+	  </div>
+	 <!-- END TOP NAVIGATION MENU -->
+	 <!-- BEGIN CHAT TOGGLER -->
+      <div class="pull-right"> 
+		<div class="chat-toggler">	
+				<a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom"  data-content='' data-toggle="dropdown" data-original-title="Notifications">
+					<div class="user-details"> 
+						<div class="username">
+							<span class="badge badge-important">3</span> 
+							Sergio <span class="bold">Peralta</span>									
+						</div>						
+					</div> 
+					<div class="iconset top-down-arrow"></div>
+				</a>	
+				<div id="notification-list" style="display:none">
+					<div style="width:300px">
+						  <div class="notification-messages info">
+									<div class="user-profile">
+										<img src="assets/img/profiles/d.jpg"  alt="" data-src="assets/img/profiles/d.jpg" data-src-retina="assets/img/profiles/d2x.jpg" width="35" height="35">
+									</div>
+									<div class="message-wrapper">
+										<div class="heading">
+											David Nester - Commented on your wall
+										</div>
+										<div class="description">
+											Meeting postponed to tomorrow
+										</div>
+										<div class="date pull-left">
+										A min ago
+										</div>										
+									</div>
+									<div class="clearfix"></div>									
+								</div>	
+							<div class="notification-messages danger">
+								<div class="iconholder">
+									<i class="icon-warning-sign"></i>
+								</div>
+								<div class="message-wrapper">
+									<div class="heading">
+										Server load limited
+									</div>
+									<div class="description">
+										Database server has reached its daily capicity
+									</div>
+									<div class="date pull-left">
+									2 mins ago
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>	
+							<div class="notification-messages success">
+								<div class="user-profile">
+									<img src="assets/img/profiles/h.jpg"  alt="" data-src="assets/img/profiles/h.jpg" data-src-retina="assets/img/profiles/h2x.jpg" width="35" height="35">
+								</div>
+								<div class="message-wrapper">
+									<div class="heading">
+										You haveve got 150 messages
+									</div>
+									<div class="description">
+										150 newly unread messages in your inbox
+									</div>
+									<div class="date pull-left">
+									An hour ago
+									</div>									
+								</div>
+								<div class="clearfix"></div>
+							</div>							
+						</div>				
+				</div>
+				<div class="profile-pic"> 
+					<img src="assets/img/profiles/ba.jpg"  alt="" data-src="assets/img/profiles/ba.jpg" data-src-retina="assets/img/profiles/ba.jpg" width="35" height="35" /> 
+				</div>       			
+			</div>
+		 <ul class="nav quick-section ">
+			<li class="quicklinks"> 
+				<a data-toggle="dropdown" class="dropdown-toggle  pull-right " href="#" id="user-options">						
+					<div class="iconset top-settings-dark "></div> 	
+				</a>
+				<ul class="dropdown-menu  pull-right" role="menu" aria-labelledby="user-options">
+                  <li><a href="user-profile.html"> My Account</a>
+                  </li>
+                  <li class="divider"></li>                
+                  <li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+               </ul>
+			</li> 
+			<li class="quicklinks"> <span class="h-seperate"></span></li> 
+			<li class="quicklinks"> 	
+			<a id="chat-menu-toggle" href="#sidr" class="chat-menu-toggle" ><div class="iconset top-chat-dark "><span class="badge badge-important hide" id="chat-message-count">1</span></div>
+			</a> 
+				<div class="simple-chat-popup chat-menu-toggle hide" >
+					<div class="simple-chat-popup-arrow"></div><div class="simple-chat-popup-inner">
+						 <div style="width:100px">
+						 <div class="semi-bold">David Nester</div>
+						 <div class="message">Hey you there </div>
+						</div>
+					</div>
+				</div>
+			</li> 
+		</ul>
+      </div>
+	   <!-- END CHAT TOGGLER -->
+      </div> 
+      <!-- END TOP NAVIGATION MENU --> 
+   
+  </div>
+  <!-- END TOP NAVIGATION BAR --> 
+</div>
+
+<!-- END HEADER --> 
+<!-- BEGIN CONTAINER -->
+<div class="page-container row"> 
+  <!-- BEGIN SIDEBAR -->
+  <div class="page-sidebar" id="main-menu"> 
+  <!-- BEGIN MINI-PROFILE -->
+  <!-- END MINI-PROFILE -->
+   
+   <!-- BEGIN SIDEBAR MENU -->	
+	<p class="menu-title">BROWSE <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
+    <ul>	
+      <li class="start active "> <a href="index.html"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span> <span class="selected"></span> <span class="badge badge-important pull-right">5</span></a> </li>     
+	  <li class=""> <a href="../frontend/index.html"> <i class="fa fa-flag"></i>  <span class="title">Featured</span></a></li>      
+      <li class=""> <a href="javascript:;"> <i class="icon-custom-thumb"></i> <span class="title">Categories</span> <span class="arrow "></span> </a>
+        <ul class="sub-menu">
+          <li > <a href="#"> Vehicles </a> </li>
+          <li > <a href="#"> Food and Drinks </a> </li>
+          <li > <a href="#"> Building and Architecture </a> </li>
+          <li > <a href="#"> Furnishings </a> </li>
+          <li > <a href="#"> Products </a> </li>
+          <li > <a href="#"> Electronics </a> </li>
+          <li > <a href="#"> Others </a> </li>
+        </ul>
+      </li>  
+      <li class=""> <a href="addmodel.html"> <i class="fa fa-plus-circle"></i>  <span class="title">Add Model</span></a></li>      
+    </ul>
+	<a href="#" class="scrollup">Scroll</a>
+	<div class="clearfix"></div>
+    <!-- END SIDEBAR MENU --> 
+  </div>
+   <div class="footer-widget">		
+	<div class="progress transparent progress-small no-radius no-margin">
+		<div class="progress-bar progress-bar-success animate-progress-bar" data-percentage="79%" style="width: 79%;"></div>		
+	</div>
+	<div class="pull-right">
+		<div class="details-status">
+		<span class="animate-number" data-value="86" data-animation-duration="560">86</span>%
+	</div>	
+	<a href="lockscreen.html"><i class="fa fa-power-off"></i></a></div>
+  </div>
+  <!-- END SIDEBAR --> 
+  <!-- BEGIN PAGE CONTAINER-->
+  <div class="page-content"> 
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <div id="portlet-config" class="modal hide">
+      <div class="modal-header">
+        <button data-dismiss="modal" class="close" type="button"></button>
+        <h3>Widget Settings</h3>
+      </div>
+      <div class="modal-body"> Widget settings form goes here </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="content">  	
+	<!-- END PAGE --> 
+		<div id="container">
+		<div class="row">		
+			<div class="col-md-4 spacing-bottom">
+				<div class="row">		
+				  <div class="col-md-12 white col-sm-6">
+					<div class="tiles purple overflow-hidden full-height added-margin" style="max-height:345px">
+							<div class="overlayer bottom-right fullwidth">
+								<div class="overlayer-wrapper">
+									<div class=" p-l-20 p-r-20 p-b-20 p-t-20">
+										<div class="pull-right"> <a href="#" class="hashtags transparent"> #Art Design </a> 
+											<a href="#" class="hashtags transparent"> #Furniture </a></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<img src="assets/img/models/model_723_aaj.jpg" alt="" class="lazy hover-effect-img">
+					</div>	
+					<div class="tiles white added-margin">
+						<div class="tiles-body">
+							<div class="row">
+								<div class="user-comment-wrapper pull-left">
+									<div class="profile-wrapper"> <img src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="35" height="35"> </div>
+									<div class="comment">
+										<div class="user-name text-black bold"> David <span class="semi-bold">Cooper</span> </div>
+										<div class="preview-wrapper">@ revox </div>
+									</div>
+									<div class="clearfix"></div>
+									</div>
+									<div class="pull-right m-r-20"> <span class="bold text-black small-text">4wks</span> </div>
+									<div class="clearfix"></div>
+									<div class="p-l-15 p-t-10 p-r-20">
+										<p>The attention to detail and the end product is stellar! I enjoyed the process </p>
+										<div class="post p-t-10 p-b-10">
+											<ul class="action-bar no-margin p-b-20 ">
+												<li><a href="#" class="text-error bold"><i class="fa fa-heart  m-r-10"></i>1k</a> </li>
+											</ul>
+										<div class="clearfix"></div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>				
+				  </div>		
+				</div>
+			</div>
+			<div class="col-md-4 spacing-bottom">
+				<div class="row">		
+				  <div class="col-md-12 white col-sm-6">
+					<div class="tiles purple overflow-hidden full-height added-margin" style="max-height:345px">
+							<div class="overlayer bottom-right fullwidth">
+								<div class="overlayer-wrapper">
+									<div class=" p-l-20 p-r-20 p-b-20 p-t-20">
+										<div class="pull-right"> <a href="#" class="hashtags transparent"> #3D Design </a>
+										<a href="#" class="hashtags transparent"> #Concept </a> </div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<img src="assets/img/models/model_723_aan.jpg" alt="" class="lazy hover-effect-img">
+					</div>	
+					<div class="tiles white added-margin">
+						<div class="tiles-body">
+							<div class="row">
+								<div class="user-comment-wrapper pull-left">
+									<div class="profile-wrapper"> <img src="assets/img/profiles/ba.jpg" alt="" data-src="assets/img/profiles/ba.jpg" data-src-retina="assets/img/profiles/ba.jpg" width="35" height="35"> </div>
+									<div class="comment">
+										<div class="user-name text-black bold"> Sergio <span class="semi-bold">Peralta</span> </div>
+										<div class="preview-wrapper">@ serpel </div>
+									</div>
+									<div class="clearfix"></div>
+									</div>
+									<div class="pull-right m-r-20"> <span class="bold text-black small-text">1d</span> </div>
+									<div class="clearfix"></div>
+									<div class="p-l-15 p-t-10 p-r-20">
+										<p>The attention to detail and the end product is stellar! I enjoyed the process </p>
+										<div class="post p-t-10 p-b-10">
+											<ul class="action-bar no-margin p-b-20 ">
+												<li><a href="#" class="text-error bold"><i class="fa fa-heart  m-r-10"></i>250</a> </li>
+											</ul>
+										<div class="clearfix"></div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>				
+				  </div>		
+				</div>
+			</div>
+			<div class="col-md-4 spacing-bottom">
+				<div class="row">		
+				  <div class="col-md-12 white col-sm-6">
+					<div class="tiles purple overflow-hidden full-height added-margin" style="max-height:345px">
+							<div class="overlayer bottom-right fullwidth">
+								<div class="overlayer-wrapper">
+									<div class=" p-l-20 p-r-20 p-b-20 p-t-20">
+										<div class="pull-right"> <a href="#" class="hashtags transparent"> #Brown </a>
+										<a href="#" class="hashtags transparent"> #Furniture </a> </div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<img src="assets/img/models/model_723_aao.jpg" alt="" class="lazy hover-effect-img">
+					</div>	
+					<div class="tiles white added-margin">
+						<div class="tiles-body">
+							<div class="row">
+								<div class="user-comment-wrapper pull-left">
+									<div class="profile-wrapper"> <img src="assets/img/profiles/bc.jpg" alt="" data-src="assets/img/profiles/bc.jpg" data-src-retina="assets/img/profiles/bc.jpg" width="35" height="35"> </div>
+									<div class="comment">
+										<div class="user-name text-black bold"> Ricardo <span class="semi-bold"> Elias</span> </div>
+										<div class="preview-wrapper">@ Ricky </div>
+									</div>
+									<div class="clearfix"></div>
+									</div>
+									<div class="pull-right m-r-20"> <span class="bold text-black small-text">24m</span> </div>
+									<div class="clearfix"></div>
+									<div class="p-l-15 p-t-10 p-r-20">
+										<p>The attention to detail and the end product is stellar! I enjoyed the process </p>
+										<div class="post p-t-10 p-b-10">
+											<ul class="action-bar no-margin p-b-20 ">
+												<li><a href="#" class="text-error bold"><i class="fa fa-heart  m-r-10"></i>120</a> </li>
+											</ul>
+										<div class="clearfix"></div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>				
+				  </div>		
+				</div>
+			</div>
+			<div class="col-md-4 spacing-bottom">
+				<div class="row">		
+				  <div class="col-md-12 white col-sm-1">
+					<div class="tiles purple overflow-hidden full-height added-margin" style="max-height:345px">
+							<div class="overlayer bottom-right fullwidth">
+								<div class="overlayer-wrapper">
+									<div class=" p-l-20 p-r-20 p-b-20 p-t-20">
+										<div class="pull-right"> <a href="#" class="hashtags transparent"> #Chair </a> </div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<img src="assets/img/models/D3D-COHUGU-03.jpg" alt="" class="lazy hover-effect-img">
+					</div>	
+					<div class="tiles white added-margin">
+						<div class="tiles-body">
+							<div class="row">
+								<div class="user-comment-wrapper pull-left">
+									<div class="profile-wrapper"> <img src="assets/img/profiles/2.png" alt="" data-src="assets/img/profiles/2.png" data-src-retina="assets/img/profiles/2.png" width="35" height="35"> </div>
+									<div class="comment">
+										<div class="user-name text-black bold"> Alejandra <span class="semi-bold">Corleto</span> </div>
+										<div class="preview-wrapper">@ ale </div>
+									</div>
+									<div class="clearfix"></div>
+									</div>
+									<div class="pull-right m-r-20"> <span class="bold text-black small-text">1wk</span> </div>
+									<div class="clearfix"></div>
+									<div class="p-l-15 p-t-10 p-r-20">
+										<p>The attention to detail and the end product is stellar! I enjoyed the process </p>
+										<div class="post p-t-10 p-b-10">
+											<ul class="action-bar no-margin p-b-20 ">
+												<li><a href="#" class="text-error bold"><i class="fa fa-heart  m-r-10"></i>10</a> </li>
+											</ul>
+										<div class="clearfix"></div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>				
+				  </div>		
+				</div>
+			</div>
+			<div class="col-md-4 spacing-bottom">
+				<div class="row">		
+				  <div class="col-md-12 white col-sm-6">
+					<div class="tiles purple overflow-hidden full-height added-margin" style="max-height:345px">
+							<div class="overlayer bottom-right fullwidth">
+								<div class="overlayer-wrapper">
+									<div class=" p-l-20 p-r-20 p-b-20 p-t-20">
+										<div class="pull-right"> <a href="#" class="hashtags transparent"> #Red </a>
+										<a href="#" class="hashtags transparent"> #Furniture </a> 
+										<a href="#" class="hashtags transparent"> #Sofa </a></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<img src="assets/img/models/model_723_aar.jpg" alt="" class="lazy hover-effect-img">
+					</div>	
+					<div class="tiles white added-margin">
+						<div class="tiles-body">
+							<div class="row">
+								<div class="user-comment-wrapper pull-left">
+									<div class="profile-wrapper"> <img src="assets/img/profiles/h.jpg" alt="" data-src="assets/img/profiles/h.jpg" data-src-retina="assets/img/profiles/h.jpg" width="35" height="35"> </div>
+									<div class="comment">
+										<div class="user-name text-black bold"> Osman <span class="semi-bold">Mejia</span> </div>
+										<div class="preview-wrapper">@ osman </div>
+									</div>
+									<div class="clearfix"></div>
+									</div>
+									<div class="pull-right m-r-20"> <span class="bold text-black small-text">2wks</span> </div>
+									<div class="clearfix"></div>
+									<div class="p-l-15 p-t-10 p-r-20">
+										<p>The attention to detail and the end product is stellar! I enjoyed the process </p>
+										<div class="post p-t-10 p-b-10">
+											<ul class="action-bar no-margin p-b-20 ">
+												<li><a href="#" class="text-error bold"><i class="fa fa-heart  m-r-10"></i>140</a> </li>
+											</ul>
+										<div class="clearfix"></div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>				
+				  </div>		
+				</div>
+			</div>
+			<div class="col-md-4 spacing-bottom">
+				<div class="row">		
+				  <div class="col-md-12 white col-sm-6">
+					<div class="tiles purple overflow-hidden full-height added-margin" style="max-height:345px">
+							<div class="overlayer bottom-right fullwidth">
+								<div class="overlayer-wrapper">
+									<div class=" p-l-20 p-r-20 p-b-20 p-t-20">
+										<div class="pull-right"> <a href="#" class="hashtags transparent"> #3D Art </a> </div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+							<img src="assets/img/models/D3D-COHUGU-09.jpg" alt="" class="lazy hover-effect-img">
+					</div>	
+					<div class="tiles white added-margin">
+						<div class="tiles-body">
+							<div class="row">
+								<div class="user-comment-wrapper pull-left">
+									<div class="profile-wrapper"> <img src="assets/img/profiles/bd.jpg" alt="" data-src="assets/img/profiles/bd.jpg" data-src-retina="assets/img/profiles/bd.jpg" width="35" height="35"> </div>
+									<div class="comment">
+										<div class="user-name text-black bold"> Clement <span class="semi-bold">Orellana</span> </div>
+										<div class="preview-wrapper">@ clement </div>
+									</div>
+									<div class="clearfix"></div>
+									</div>
+									<div class="pull-right m-r-20"> <span class="bold text-black small-text">1Hour</span> </div>
+									<div class="clearfix"></div>
+									<div class="p-l-15 p-t-10 p-r-20">
+										<p>The attention to detail and the end product is stellar! I enjoyed the process </p>
+										<div class="post p-t-10 p-b-10">
+											<ul class="action-bar no-margin p-b-20 ">
+												<li><a href="#" class="text-error bold"><i class="fa fa-heart  m-r-10"></i>2</a> </li>
+											</ul>
+										<div class="clearfix"></div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>				
+				  </div>		
+				</div>
+			</div>
+		</div>  
+	   </div>
+	</div>
+</div>
+<!-- BEGIN CHAT --> 
+<!-- END CHAT --> 
+<!-- END CONTAINER --> 
+</div>
+
+<!-- BEGIN CORE JS FRAMEWORK--> 
+<script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/breakpoints.js" type="text/javascript"></script> 
+<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script> 
+<!-- END CORE JS FRAMEWORK --> 
+
+<!-- BEGIN PAGE LEVEL JS --> 
+<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>  
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>  
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/jquery-block-ui/jqueryblockui.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS   --> 	
+<!-- PAGE JS --> 	
+<!-- BEGIN CORE TEMPLATE JS --> 
+<script src="assets/js/core.js" type="text/javascript"></script> 
+<!-- END CORE TEMPLATE JS -->
+</body>
+</html>
