@@ -3,7 +3,9 @@
 @{
     ViewBag.Title = "Index";
     var myModel = Model.ToList();
-    var count = 0;
+    int count = 0;
+    int residue = (myModel.Count % (int)ViewBag.column);
+    int result = myModel.Count / (int)ViewBag.column;
 }
 
 @using VirtualDesign.Helpers
@@ -11,14 +13,16 @@
 <div class="row hidden-xlg">
     @for (int i = 0; i < (int)ViewBag.column; i++)
     {
-        if (myModel.Count >= count)
+        if (myModel.Count > count)
         {
+            //dynamic calc size of rows      
+            int row = residue > 0 ? (result + 1) : result;
             <div class="col-md-4 col-sm-6">
-
-                @for (int j = 0; j < (int)ViewBag.row; j++)
+               
+                @for (int j = 0; j < row; j++)
                 {
-                    if (myModel.Count >= count)
-                    {
+                    //if (myModel.Count > count)
+                    //{
                         var item = myModel[count];
                         <div class="row">
                             <div class="col-md-12 m-b-10">
@@ -37,7 +41,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="@Url.Content("~/Content/user/model/model_723_aaj.jpg")" alt="" class="lazy hover-effect-img" />
+
+                                        @{
+
+                                            var imgSrc = @Url.Content("~/Content/user/model/model_723_aal.jpg");
+                                            if (item.PictureFile != null)
+                                                imgSrc = "data:image/png;base64," + Convert.ToBase64String(item.PictureFile);
+                                        }
+                                        <img src="@imgSrc" alt="" class="lazy hover-effect-img" />
                                     </div>
                                     <div class="tiles white ">
                                         <div class="tiles-body">
@@ -71,12 +82,14 @@
                                 </div>
                             </div>
                         </div>
-                    }
+                    //}
                     count++;
                 }
             </div>
+           residue--;
         }
     }
 </div>
+
 
 

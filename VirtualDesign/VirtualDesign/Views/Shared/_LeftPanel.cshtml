@@ -1,0 +1,25 @@
+﻿@using VirtualDesign.Models;
+
+@{
+    
+    VirtualContext db = new VirtualContext();
+    List<Category> Categories = db.Categories.ToList();
+}
+
+
+<p class="menu-title">BROWSE <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
+
+<ul>
+    <li class="start active "> <a href="@Url.Action("Index", "Model")"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span> <span class="selected"></span> <span class="badge badge-important pull-right">5</span></a> </li>
+    <li class=""> <a href="#"> <i class="fa fa-flag"></i>  <span class="title">Featured</span></a></li>
+    <li class="">
+        <a href="javascript:;"> <i class="icon-custom-thumb"></i> <span class="title">Categories</span> <span class="arrow "></span> </a>
+        <ul class="sub-menu">
+            @foreach (var item in Categories)
+            {
+                <li> <a href="@Url.Action("Details", "Category", new { id = item.CatergoryId })"> @Html.DisplayFor(modelItem => item.Name) </a> </li>
+            }
+        </ul>
+    </li>
+    <li class=""> <a href="@Url.Action("Create", "Model")"> <i class="fa fa-plus-circle"></i>  <span class="title">Add Model</span></a></li>
+</ul>

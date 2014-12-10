@@ -1112,6 +1112,23 @@
     <Content Include="Content\assets\scss\mixins.css" />
     <Content Include="Content\assets\scss\responsive.css" />
     <Content Include="Content\assets\scss\style.css" />
+    <Content Include="Content\user\model\D3D-COHUGU-01.jpg" />
+    <Content Include="Content\user\model\D3D-COHUGU-02.jpg" />
+    <Content Include="Content\user\model\D3D-COHUGU-03.jpg" />
+    <Content Include="Content\user\model\D3D-COHUGU-04.jpg" />
+    <Content Include="Content\user\model\D3D-COHUGU-06.jpg" />
+    <Content Include="Content\user\model\D3D-COHUGU-09.jpg" />
+    <Content Include="Content\user\model\D3D-COHUGU-10.jpg" />
+    <Content Include="Content\user\model\model_723_aaj.jpg" />
+    <Content Include="Content\user\model\model_723_aal.jpg" />
+    <Content Include="Content\user\model\model_723_aam.jpg" />
+    <Content Include="Content\user\model\model_723_aan.jpg" />
+    <Content Include="Content\user\model\model_723_aao.jpg" />
+    <Content Include="Content\user\model\model_723_aap.jpg" />
+    <Content Include="Content\user\model\model_723_aar.jpg" />
+    <Content Include="Content\user\model\model_723_aat.jpg" />
+    <Content Include="Content\user\model\model_723_aau.jpg" />
+    <Content Include="Content\user\model\model_723_aav.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1286,7 +1303,6 @@
     <Content Include="Views\Tag\Details.cshtml" />
     <Content Include="Views\Tag\Edit.cshtml" />
     <Content Include="Views\Tag\Index.cshtml" />
-    <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -1298,6 +1314,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+    <Content Include="Views\Category\_Categories.cshtml" />
+    <Content Include="Views\Shared\_LeftPanel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201412050744195_init.resx">
