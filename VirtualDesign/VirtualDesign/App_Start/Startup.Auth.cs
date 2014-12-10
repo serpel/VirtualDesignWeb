@@ -28,11 +28,11 @@ namespace VirtualDesign
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "415470248602082",
+               appSecret: "0cf9f396d87b263b9c8261ab8fc094b7");
 
-            app.UseGoogleAuthentication();
+            //app.UseGoogleAuthentication();
         }
     }
 }
