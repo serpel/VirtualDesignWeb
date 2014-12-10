@@ -17,40 +17,49 @@ namespace VirtualDesign.Migrations
         {
             //  This method will be called after migrating to the latest version.
 
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  to avoid creating duplicate seed data. E.g.
+            //
+            //    context.People.AddOrUpdate(
+            //      p => p.FullName,
+            //      new Person { FullName = "Andrew Peters" },
+            //      new Person { FullName = "Brice Lambson" },
+            //      new Person { FullName = "Rowan Miller" }
+            //    );
+            //
+
             context.Categories.AddOrUpdate(
-                c => c.Name,
-                new Category() { Name = "Vehicles", CreatedDate = DateTime.Now, IsActive = true },
-                new Category() { Name = "Food And Drinks", CreatedDate = DateTime.Now, IsActive = true },
-                new Category() { Name = "Building and Architecure", CreatedDate = DateTime.Now, IsActive = true },
-                new Category() { Name = "Furnishings", CreatedDate = DateTime.Now, IsActive = true },
-                new Category() { Name = "Products", CreatedDate = DateTime.Now, IsActive = true },
-                new Category() { Name = "Electronics", CreatedDate = DateTime.Now, IsActive = true },
-                new Category() { Name = "Others", CreatedDate = DateTime.Now, IsActive = true }
+                ca => ca.Name,
+                new Category { Name = "Vehicles", IsActive = true, CreatedDate = DateTime.Now.AddDays(-12) },
+                new Category { Name = "Food and Drinks", IsActive = true, CreatedDate =  DateTime.Now.AddDays(-20) },
+                new Category { Name = "Building and Architecture", IsActive = true, CreatedDate = DateTime.Now },
+                new Category { Name = "Furnishings", IsActive = true, CreatedDate = DateTime.Now.AddDays(30) },
+                new Category { Name = "Products", IsActive = true, CreatedDate = DateTime.Now.AddDays(-3) },
+                new Category { Name = "Electronics", IsActive = true, CreatedDate = DateTime.Now.AddDays(200) },
+                new Category { Name = "Others", IsActive = true, CreatedDate = DateTime.Now.AddDays(-400) }
+                );
+            context.SaveChanges();
+
+            context.Models.AddOrUpdate(
+                mo => mo.Name,
+                new Model { Name = "Big Table", Description = "this is a test for description", Username = "serpel", IsActive = true, CategoryId = context.Categories.FirstOrDefault().CatergoryId, CreatedDate = DateTime.Now, PictureFile = null  },
+                new Model { Name = "Mesh Table", Description = "this is a test for description", Username = "susam", IsActive = true, CategoryId = context.Categories.FirstOrDefault().CatergoryId, CreatedDate = DateTime.Now.AddDays(-2), PictureFile = null },
+                new Model { Name = "Random article", Description = "this is a test for description", Username = "nicky", IsActive = true, CategoryId = context.Categories.FirstOrDefault().CatergoryId, CreatedDate = DateTime.Now, PictureFile = null  },
+                new Model { Name = "Chair", Description = "this is a test for description", Username = "choper", IsActive = true, CategoryId = context.Categories.FirstOrDefault().CatergoryId, CreatedDate = DateTime.Now.AddDays(-30), PictureFile = null  },
+                new Model { Name = "Fancy Chair", Description = "this is a test for description", Username = "jairo", IsActive = true, CategoryId = context.Categories.FirstOrDefault().CatergoryId, CreatedDate = DateTime.Now.AddDays(-10), PictureFile = null  },
+                new Model { Name = "Door in the garden", Description = "this is a test for description", Username = "artur", IsActive = true, CategoryId = context.Categories.FirstOrDefault().CatergoryId, CreatedDate = DateTime.Now.AddDays(-100), PictureFile = null  },
+                new Model { Name = "Real design", Description = "this is a test for description", Username = "hulk", IsActive = true, CategoryId = context.Categories.FirstOrDefault().CatergoryId, CreatedDate = DateTime.MaxValue, PictureFile = null  }
                 );
 
             context.SaveChanges();
 
-            context.Models.AddOrUpdate(
-                 m => m.Name,
-                 new Model()
-                 {
-                     Name = "Chair",
-                     Description = "Fantastic Chair",
-                     IsActive = true,
-                     CreatedDate = DateTime.Now,
-                     CategoryId = context.Categories.FirstOrDefault().CatergoryId,
-                     PictureFile = null,
-                     Username = "serpel"
-                 });
-
-            context.SaveChanges();
-
             context.Tags.AddOrUpdate(
-                   t => t.Name,
-                   new Tag(){ Name = "Wood", ModelId = context.Models.FirstOrDefault().ModelId },
-                   new Tag(){ Name = "Modern", ModelId = context.Models.FirstOrDefault().ModelId },
-                   new Tag(){ Name = "New", ModelId = context.Models.FirstOrDefault().ModelId } 
-                   );
+                t => t.Name,
+                new Tag { Name = "new", ModelId = context.Models.FirstOrDefault().ModelId },
+                new Tag { Name = "retro", ModelId = context.Models.FirstOrDefault().ModelId },
+                new Tag { Name = "blue", ModelId = context.Models.FirstOrDefault().ModelId },
+                new Tag { Name = "old", ModelId = context.Models.FirstOrDefault().ModelId }
+                );
 
             context.SaveChanges();
         }

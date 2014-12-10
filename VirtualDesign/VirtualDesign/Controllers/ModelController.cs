@@ -18,7 +18,14 @@ namespace VirtualDesign.Controllers
         // GET: /Model/
         public async Task<ActionResult> Index()
         {
-            return View(await db.Models.ToListAsync());
+            //DateTime date = DateTime.Now;
+            //String text = date.TimeAgo();
+
+            var list = await db.Models.ToListAsync();
+            ViewBag.column = 3;
+            // trick for the special grid of 3 columns and undefined rows
+            ViewBag.row = ViewBag.column <= list.Count ? (list.Count / ViewBag.column) : 1;
+            return View(list);
         }
 
         // GET: /Model/Details/5

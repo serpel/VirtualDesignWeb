@@ -10,7 +10,7 @@ namespace VirtualDesign.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Model");
         }
 
         public ActionResult About()
