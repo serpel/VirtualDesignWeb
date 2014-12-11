@@ -194,8 +194,9 @@
     <script src="~/Content/assets/plugins/respond.js"></script>
     <![endif]-->
 
-    @Scripts.Render("~/Content/framework")
-    @Scripts.Render("~/Content/plugins")
+    @Scripts.Render("~/bundles/framework")
+    @Scripts.Render("~/bundles/plugins")
+@Scripts.Render("~/bundles/template")
     <!--@Scripts.Render("~/Content/template")-->
     @RenderSection("scripts", required: false)
 </body>

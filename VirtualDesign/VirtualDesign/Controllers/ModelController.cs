@@ -46,6 +46,7 @@ namespace VirtualDesign.Controllers
         // GET: /Model/Create
         public ActionResult Create()
         {
+            TempData["Categories"] = db.Categories.ToList();
             return View();
         }
 

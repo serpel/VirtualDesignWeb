@@ -14,7 +14,7 @@
     <li class=""> <a href="#"> <i class="fa fa-flag"></i>  <span class="title">Featured</span></a></li>
     <li class="">
         <a href="javascript:;"> <i class="icon-custom-thumb"></i> <span class="title">Categories</span> <span class="arrow "></span> </a>
-        <ul class="sub-menu">
+        <ul class="sub-menu" id="menul">
             @foreach (var item in Categories)
             {
                 <li> <a href="@Url.Action("Details", "Category", new { id = item.CatergoryId })"> @Html.DisplayFor(modelItem => item.Name) </a> </li>

@@ -29,8 +29,8 @@ namespace VirtualDesign
 
             #region scripts
             bundles.Add(new ScriptBundle("~/bundles/framework").Include(
-                        "~/Content/assets/plugins/jquery-{version}.min.js",
-                        "~/Content/assets/plugins/jquery-ui/jquery-ui-{version}.custom.min.js",
+                        "~/Content/assets/plugins/jquery-1.8.3.min.js",
+                        "~/Content/assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js",
                         "~/Content/assets/plugins/boostrapv3/js/bootstrap.min.js",
                         "~/Content/assets/plugins/breakpoints.js",
                         "~/Content/assets/plugins/jquery-unveil/jquery.unveil.min.js",
@@ -73,10 +73,10 @@ namespace VirtualDesign
                       "~/Content/assets/css/magic_space.css"));
 
             bundles.Add(new StyleBundle("~/Content/framework").Include(
-                      "~/Content/assets/plugins/boostrapv3/css/bootstrap.min.css",
-                      "~/Content/assets/plugins/boostrapv3/css/bootstrap-theme.min.css",
+                      "~/Content/assets/plugins/boostrapv3/css/bootstrap.css",
+                      "~/Content/assets/plugins/boostrapv3/css/bootstrap-theme.css",
                       "~/Content/assets/plugins/font-awesome/css/font-awesome.css",
-                      "~/Content/assets/css/animate.min.css",
+                      "~/Content/assets/css/animate.css",
                       "~/Content/assets/plugins/jquery-scrollbar/jquery.scrollbar.css"));
 
 

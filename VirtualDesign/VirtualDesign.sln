@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualDesign", "VirtualDesign\VirtualDesign.csproj", "{C0EF5260-935D-4EA3-B96C-0C31A4FFEDE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualDesign.Tests", "VirtualDesign.Tests\VirtualDesign.Tests.csproj", "{29929DE6-C14D-40A8-8FFC-F2BE9BD0ED70}"
