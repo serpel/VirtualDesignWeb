@@ -60,4 +60,11 @@ namespace VirtualDesign.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
+
+    //Note: bug fix from http://stackoverflow.com/questions/20183477/object-does-not-contain-a-definition-for-action-when-using-identityuser-with
+    public class ExternalLoginViewModel
+    {
+        public string Action { get; set; }
+        public string ReturnUrl { get; set; }
+    }
 }

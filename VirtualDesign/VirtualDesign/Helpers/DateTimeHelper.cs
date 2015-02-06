@@ -47,5 +47,36 @@ namespace VirtualDesign.Helpers
                 return "";
             }
         }
+
+        public static String DaysAgo(this DateTime date)
+        {
+
+            if (date < DateTime.Now)
+            {
+                TimeSpan timeSince = DateTime.Now.Subtract(date);
+
+                if (timeSince.TotalHours < 24)
+                    return "today";
+                if (timeSince.TotalDays == 1)
+                    return "yesterday";
+                if (timeSince.TotalDays < 14)
+                    return "last week";
+                if (timeSince.TotalDays < 21)
+                    return "2 weeks ago";
+                if (timeSince.TotalDays < 28)
+                    return "3 weeks ago";
+                if (timeSince.TotalDays < 60)
+                    return "last month";
+                if (timeSince.TotalDays < 730)
+                    return "last year";
+                //last but not least...
+                return string.Format("{0} years ago", Math.Round(timeSince.TotalDays / 365));
+            }
+            else
+            {
+                return "";
+            }
+        }
     }
+
 }

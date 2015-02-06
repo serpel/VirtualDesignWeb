@@ -1,0 +1,57 @@
+﻿@model IEnumerable<VirtualDesign.Models.Model>
+@using Microsoft.AspNet.Identity
+@using VirtualDesign.Helpers
+
+@{
+    //Layout = null;
+}
+
+<div class="page-title">
+    <i class="icon-custom-left"></i>
+    <h3>TimeLine <span class="semi-bold">Model</span></h3>
+</div>
+
+<div class="row">
+    <div class="col-md-10 col-vlg-7">
+        <ul class="cbp_tmtimeline">
+
+            @foreach (var item in Model)
+            {
+                <li>
+                    <time class="cbp_tmtime" datetime="@item.CreatedDate">
+                        <span class="date">@item.CreatedDate.DaysAgo()</span>
+                        <span class="time"><span class="semi-bold">@item.CreatedDate.ToString("hh:mm tt")</span></span>
+                    </time>
+                    <div class="cbp_tmicon info animated bounceIn"> <i class="fa fa-quote-left"></i> </div>
+                    <div class="cbp_tmlabel">
+                        <div class="p-t-10 p-l-30 p-r-20 p-b-20 xs-p-r-10 xs-p-l-10 xs-p-t-5">
+                            <h4 class="inline m-b-5"><span class="text-success semi-bold">@@ @item.Username</span> </h4>
+                            <h5 class="inline muted semi-bold m-b-5">(@item.Category.Name)</h5>
+                            <div class="muted">    
+                                @if (!item.Tags.IsEmpty()) { 
+                                   foreach (var tag in item.Tags.Take(3))
+                                   {
+                                       <a href="#" class="hashtags transparent"> tag </a>
+                                   }
+                                }
+                            </div>
+                            <p class="m-t-5 dark-text">
+                                @item.Description
+                            </p>
+                        </div>
+                        <div class="m-l-10 m-r-10 xs-m-l-5 xs-m-r-5"> <img src="@item.PictureFile" style="width:100%" alt=""> </div>
+                        <div class="clearfix"></div>
+
+                        <div class="tiles grey p-t-10 p-b-10 p-l-20">
+                            <ul class="action-links">
+                                <li>@Html.ActionLink("Edit", "Edit", "Model", new { id = item.ModelId }, null)</li>
+                                <li>@Html.ActionLink("Delete", "Delete", "Model", new { id = item.ModelId }, null)</li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

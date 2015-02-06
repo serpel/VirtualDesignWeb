@@ -13,5 +13,6 @@ namespace VirtualDesign.Models
         public DbSet<Category> Categories { get; set; }
         public DbSet<Model> Models { get; set; }
         public DbSet<Tag> Tags { get; set; }
+
     }
 }

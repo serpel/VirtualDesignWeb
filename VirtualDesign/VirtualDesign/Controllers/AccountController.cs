@@ -26,7 +26,33 @@ namespace VirtualDesign.Controllers
         }
 
         public UserManager<ApplicationUser> UserManager { get; private set; }
+        
+        private VirtualContext db = new VirtualContext();
 
+        [AllowAnonymous]
+        public ActionResult TimeLine(string id)
+        {
+            if(id == null)
+            {
+                return HttpNotFound();
+            }
+
+            var list = from models in db.Models
+                       where models.Username.Equals(id)
+                       select models;
+
+            /*var TimeLineUser = from user in db.Users
+                               where user.UserName.Equals(id)
+                               select user;*/
+
+            if (list == null)
+            {
+                return HttpNotFound();
+            }
+            
+            //ViewBag.User = TimeLineUser;
+            return View(list.ToList());
+        }
         //
         // GET: /Account/Login
         [AllowAnonymous]
@@ -283,10 +309,10 @@ namespace VirtualDesign.Controllers
             return View(model);
         }
 
+
         //
         // POST: /Account/LogOff
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut();

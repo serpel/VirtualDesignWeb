@@ -1,22 +1,40 @@
 ﻿@using Microsoft.AspNet.Identity
-@if (Request.IsAuthenticated)
-{
-    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
-    {
-    @Html.AntiForgeryToken()
 
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Manage" })
+<div class="pull-right">
+    <div class="chat-toggler">
+
+        @if (Request.IsAuthenticated)
+        {
+            <a href="#" class="dropdown-toggle" id="my-task-list" data-placement="bottom" data-content='' data-toggle="dropdown" data-original-title="Notifications">
+                <div class="user-details">
+                    <div class="username"> <b>@@ @User.Identity.GetUserName()</b> </div>
+                </div>
+                <div class="iconset top-down-arrow"></div>
+            </a>
+            <div class="profile-pic"> <img src="@Url.Content("~/Content/assets/img/profiles/avatar_small.jpg")" alt="" data-src="@Url.Content("~/Content/assets/img/profiles/avatar_small.jpg")" data-src-retina="@Url.Content("~/Content/assets/img/profiles/avatar_small2x.jpg")" width="35" height="35" /> </div>
+        }
+        else
+        {
+            //TODO: Cambiar estilo del login
+            <div>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</div>
+        }
+    </div>
+
+    <ul class="nav quick-section ">
+        <li class="quicklinks">
+            @if (Request.IsAuthenticated)
+            {
+                <a data-toggle="dropdown" class="dropdown-toggle  pull-right " href="#" id="user-options">
+                    <div class="iconset top-settings-dark "></div>
+                </a>
+
+                <ul class="dropdown-menu  pull-right" role="menu" aria-labelledby="user-options">
+                    <li>@Html.ActionLink("My Profile", "TimeLine", "Account", new { id = User.Identity.GetUserName() }, null)</li>
+                    <li>@Html.ActionLink("My Account", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "My Account" })</li>
+                    <li class="divider"></li>
+                    <li><a href="@Url.Action("LogOff", "Account")"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+                </ul>
+            }
         </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
     </ul>
-    }
-}
-else
-{
-    <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-    </ul>
-}
+</div>

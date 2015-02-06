@@ -1,4 +1,3 @@
-C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\VirtualDesign.dll.config
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\VirtualDesign.dll
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\VirtualDesign.pdb
@@ -28,6 +27,9 @@ C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.dll
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Razor.dll
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\WebGrease.dll
+C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.xml
+C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Newtonsoft.Json.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Helpers.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Mvc.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Optimization.xml
@@ -35,80 +37,133 @@ C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Deployment.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Razor.xml
-C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Newtonsoft.Json.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Antlr3.Runtime.pdb
+C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.SqlServer.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.xml
-C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Facebook.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Cookies.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.dll
-C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.pdb
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.csprojResolveAssemblyReference.cache
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.init.resources
-C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.csproj.GenerateResource.Cache
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.init1.resources
 C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.categorymigration.resources
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\VirtualDesign.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\VirtualDesign.pdb
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Antlr3.Runtime.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.SqlServer.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Owin.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Helpers.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Mvc.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Optimization.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Razor.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Deployment.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Razor.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\WebGrease.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Helpers.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Mvc.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Optimization.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Razor.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Deployment.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Razor.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Antlr3.Runtime.pdb
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.SqlServer.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.csprojResolveAssemblyReference.cache
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.init.resources
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.init1.resources
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.categorymigration.resources
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.csproj.GenerateResource.Cache
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.dll
-C:\Users\relias\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.pdb
+C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.csproj.GenerateResource.Cache
+C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.dll
+C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.pdb
+C:\Users\serpe_000\Documents\GitHub\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.DeleteCategoryId.resources
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\VirtualDesign.dll.config
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\VirtualDesign.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\VirtualDesign.pdb
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Antlr3.Runtime.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.SqlServer.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Data.Edm.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Data.OData.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Data.Services.Client.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Newtonsoft.Json.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Owin.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Net.Http.Formatting.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Spatial.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Http.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Http.WebHost.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Mvc.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Optimization.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Razor.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Deployment.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Razor.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\WebGrease.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Antlr3.Runtime.pdb
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\EntityFramework.SqlServer.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Data.Edm.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Data.OData.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Data.Services.Client.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\Newtonsoft.Json.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Net.Http.Formatting.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Spatial.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Http.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Http.WebHost.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Mvc.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Optimization.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.Razor.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Deployment.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\System.Web.WebPages.Razor.xml
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\de\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\es\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\fr\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\it\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ja\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ko\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\ru\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.InitialDatabase.resources
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.AddCategoriId_to_CategoryModel.resources
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.AddLikes_to_Model.resources
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.Migrations.UpdateTag_to_Model.resources
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.csproj.GenerateResource.Cache
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.dll
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.pdb
+C:\Users\serpe_000\Source\Workspaces\Virtual Design\VirtualDesignWeb\VirtualDesign\VirtualDesign\obj\Debug\VirtualDesign.csprojResolveAssemblyReference.cache

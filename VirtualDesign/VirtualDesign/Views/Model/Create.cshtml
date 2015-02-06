@@ -1,81 +1,136 @@
 ﻿@model VirtualDesign.Models.Model
+@using Microsoft.AspNet.Identity
 
 @{
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<div class="page-title">
+    <i class="icon-custom-left"></i>
+    <h3>Create <span class="semi-bold">Model</span></h3>
+</div>
 
-
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="col-md-12">
-        <h4>Model</h4>
-        <hr />
-        @Html.ValidationSummary(true)
-        <div class="row">
-        <div class="form-group">
-            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.TextBoxFor(model => model.Name, new { @class = "form-control"})
-                @Html.ValidationMessageFor(model => model.Name)
+<div class="row">
+    <div class="col-md-6">
+        <div class="grid simple">
+            <div class="grid-title no-border">
+                <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
             </div>
-        </div>
-</div><div class="row">
-        <div class="form-group">
-            @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.TextBoxFor(model => model.Name, new { @class = "form-control"})
-                @Html.ValidationMessageFor(model => model.Description)
-            </div>
-        </div>
-</div><div class="row">
-        <div class="form-group">
-            @Html.LabelFor(model => model.CategoryId, new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.DropDownListFor(model => model.CategoryId, TempData["Categories"])
-                @Html.ValidationMessageFor(model => model.CategoryId)
-            </div>
-        </div>
-</div><div class="row">
-        <div class="form-group">
-            @Html.LabelFor(model => model.PictureFile, new { @class = "control-label col-md-2" })
-            <div class="col-md-6">
-                @Html.TextBoxFor(model => model.PictureFile, new {@class="form-control"})
-                @Html.ValidationMessageFor(model => model.PictureFile)
-            </div>
-        </div>
-</div><div class="row">
-        <div class="form-group">
-            @Html.LabelFor(model => model.IsActive, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DisplayFor(model => model.IsActive)
-                @Html.ValidationMessageFor(model => model.IsActive)
-            </div>
-        </div>
-</div><div class="row">
-        <div class="form-group">
-            @Html.LabelFor(model => model.CreatedDate, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.CreatedDate, new {@class="form-control"})
-                @Html.ValidationMessageFor(model => model.CreatedDate)
-            </div>
-        </div>
-<</div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+            <div class="grid-body no-border">
+                <br>
+                <div class="row">
+                    @using (Html.BeginForm("Create", "Model", FormMethod.Post, new { enctype = "multipart/form-data", @id = "myForm" }))
+                    {
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true)
+                                <div class="controls">
+                                    @*@Html.HiddenFor(model => model.Likes)*@
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" form-group">
+                                    @Html.LabelFor(model => model.Username, new { @class = "form-label" })
+                                    @Html.ValidationMessageFor(model => model.Username, null, new { @class = "text-error" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(model => model.Username, new { @class = "form-control", @readonly = true, Value = @User.Identity.GetUserName() })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" form-group">
+                                    @Html.LabelFor(model => model.CreatedDate, new { @class = "form-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(model => model.CreatedDate, new { @class = "form-control", @disabled = "disabled", Value = @DateTime.Now.ToShortDateString() })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="text-error">*</span>@Html.LabelFor(model => model.Name, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.Name, null, new { @class = "text-error" })
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Description, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.Description, null, new { @class = "text-error" })
+                                <div class="controls">
+                                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CategoryId, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.CategoryId, null, new { @class = "text-error" })
+                                <div class="controls">
+                                    @Html.DropDownListFor(model => model.CategoryId, (IEnumerable<SelectListItem>)ViewBag.Categories, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Tags)
+                                <span class="help">e.g "chair, brown, big"</span>
+                                @Html.ValidationMessageFor(model => model.Tags, null, new { @class = "text-error" })
+                                @Html.TextBoxFor(model => model.Tags, new { @class = "span12 tagsinput", @data_role="tagsinput" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PictureFile, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.PictureFile, null, new { @class = "text-error" })
+                                <div class="controls">
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="text-error">*</span>@Html.LabelFor(model => model.ModelFile, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.ModelFile, null, new { @class = "text-error" })
+                                <div class="controls">
+                                    <div class="fallback">
+                                        <input name="modelFile" type="file" multiple />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <div class="pull-right">
+                                    <button class="btn btn-primary btn-cons" type="submit"><i class="icon-ok"></i> Create</button>
+                                    <button id="btnCancel" class="btn btn-default btn-cons" type="button">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
             </div>
         </div>
     </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
 </div>
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnCancel').click(function (e) {
+                location.href = '@Url.Action("Index")';
+            });
+        });
+    </script>
 }
+
+ @*jQuery.validator.setDefaults({
+            debug: true,
+            success: "valid"
+        });
+        $("#myForm").validate({
+            rules: {
+                file: {
+                    required: false,
+                    extension: "jpg|png|bmp|jpeg"
+                },
+                modelFile: {
+                    required: false,
+                    extension: "obj|md2|fbx"
+                }
+            }
+        });*@

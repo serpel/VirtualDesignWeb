@@ -1,72 +1,106 @@
 ﻿@model VirtualDesign.Models.Model
+@using Microsoft.AspNet.Identity
+@using VirtualDesign.Helpers
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Details";
 }
 
-<h2>Delete</h2>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Model</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CategoryId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CategoryId)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PictureFile)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PictureFile)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsActive)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsActive)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedDate)
-        </dd>
-
-    </dl>
-
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
-    }
+<div class="page-title">
+    <i class="icon-custom-left"></i>
+    <h3>Delete <span class="semi-bold">Model</span></h3>
 </div>
+
+<div class="row hidden-xlg">
+    <ol class="commentlist">
+            <li class="col-sm-4" style="list-style:none;" category="@Model.Category.Name">
+                <div class="">
+                    <div class="itemM">
+                        <div class="itemMM">
+                            <div class="col-md-12 m-b-10">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true)
+                                
+                                <div class="widget-item ">
+                                    <div class="controller overlay right"> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
+                                    <div class="tiles green  overflow-hidden full-height" style="max-height:214px">
+                                        <div class="overlayer bottom-right fullwidth">
+                                            <div class="overlayer-wrapper">
+                                                <div class="tiles gradient-black p-l-20 p-r-20 p-b-20 p-t-20">
+                                                    <div class="pull-right">
+                                                        @if (!Model.Tags.IsEmpty())
+                                                        {
+                                                            foreach (var tag in Model.Tags.Split(',').Take(3))
+                                                            {
+                                                                <a href="#" class="hashtags transparent"> @tag </a>
+                                                            }
+                                                        }
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        @{
+                                            var imgSrc = Model.PictureFile.IsEmpty() ? @Url.Content("~/Content/user/model/model_723_aal.jpg") : Model.PictureFile;
+                                        }
+                                        <img src="@imgSrc" alt="" class="lazy hover-effect-img" />
+                                    </div>
+                                    <div class="tiles white ">
+                                        <div class="tiles-body">
+                                            <div class="row">
+                                                <div class="user-profile-pic text-left">
+                                                    <img width="69" height="69" data-src-retina="@Url.Content("~/Content/assets/img/profiles/avatar2x.jpg")" data-src="@Url.Content("~/Content/assets/img/profiles/avatar.jpg")" src="@Url.Content("~/Content/assets/img/profiles/avatar.jpg")" alt="">
+                                                    <div class="pull-right m-r-20 m-t-35"> <span class="bold text-black small-text">@Model.CreatedDate.TimeAgo()</span> </div>
+                                                </div>
+                                                <div class="col-md-12 no-padding">
+                                                    <div class="user-comment-wrapper">
+                                                        <div class="comment">
+                                                            <div class="user-name text-black bold"><span class="semi-bold">@Html.DisplayFor(modelItem => Model.Name)</span> </div>
+                                                            <div class="preview-wrapper">@@ @Html.ActionLink(Model.Username, "TimeLine", "Account", new { id = Model.Username }, null) </div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-r-20 m-t-20 m-b-10  m-l-10">
+                                                        <!--<p class="p-b-10"></p>-->
+                                                        <p>@Html.DisplayFor(modelItem => Model.Description)</p>
+                                                        <div class="post p-t-10 p-b-10">
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <div class="pull-right">
+                                            <button id="btnCancel" class="btn btn-default btn-cons" type="button">Back to Dashboard</button>
+                                            <button class="btn btn-primary btn-cons" type="submit"><i class="icon-ok"></i> Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+    </ol>
+</div>
+
+@section Scripts {
+
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnCancel').click(function (e) {
+                location.href = '@Url.Action("Index")';
+            });
+        });
+    </script>
+}

@@ -9,7 +9,7 @@ namespace VirtualDesign.Models
     public class Category
     {
         [Key]
-        public Int32 CatergoryId { get; set; }
+        public Int32 CategoryId { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 1, ErrorMessage = "Cannot be longer than {0} characters")]

@@ -28,7 +28,7 @@ namespace VirtualDesign
                       "~/Content/site.css"));*/
 
             #region scripts
-            bundles.Add(new ScriptBundle("~/bundles/framework").Include(
+            /*bundles.Add(new ScriptBundle("~/bundles/framework").Include(
                         "~/Content/assets/plugins/jquery-1.8.3.min.js",
                         "~/Content/assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js",
                         "~/Content/assets/plugins/boostrapv3/js/bootstrap.min.js",
@@ -43,25 +43,43 @@ namespace VirtualDesign
                         "~/Content/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
                         "~/Content/assets/plugins/pace/pace.min.js",
                         "~/Content/assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js",
-                        "~/Content/assets/plugins/jquery-ricksaw-chart/js/raphael-min.js",
-                        "~/Content/assets/plugins/jquery-ricksaw-chart/js/d3.v2.js",
-                        "~/Content/assets/plugins/jquery-ricksaw-chart/js/rickshaw.min.js",
-                        "~/Content/assets/plugins/jquery-sparkline/jquery-sparkline.js",
-                        "~/Content/assets/plugins/skycons/skycons.js",
-                        "~/Content/assets/plugins/owl-carousel/owl.carousel.min.js",
-                        "~/Content/assets/plugins/Mapplic/js/jquery.easing.js",
-                        "~/Content/assets/plugins/Mapplic/js/jquery.mousewheel.js",
-                        "~/Content/assets/plugins/Mapplic/js/hammer.js",
-                        "~/Content/assets/plugins/Mapplic/mapplic/mapplic.js",
-                        "~/Content/assets/plugins/jquery-flot/jquery.flot.js",
-                        "~/Content/assets/plugins/jquery-flot/jquery.flot.resize.min.js",
+                        "~/Content/assets/js/core.js",
                         "~/Content/assets/plugins/jquery-metrojs/MetroJs.min.js"));
+             * */
 
-            bundles.Add(new ScriptBundle("~/bundles/template").Include(
-                      "~/Content/assets/js/core.js",
-                      "~/Content/assets/js/chat.js",
-                      "~/Content/assets/js/demo.js",
-                      "~/Content/assets/js/dashboard_v2.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/framework").Include(
+                        "~/Content/assets/plugins/jquery-1.8.3.min.js",
+                        "~/Content/assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js",
+                        "~/Content/assets/plugins/boostrapv3/js/bootstrap.min.js",
+                        "~/Content/assets/plugins/breakpoints.js",
+                        "~/Content/assets/plugins/jquery-unveil/jquery.unveil.min.js",
+                        "~/Content/assets/plugins/jquery-lazyload/jquery.lazyload.min.js",
+                        "~/Content/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"
+                ));
+
+
+            bundles.Add(new ScriptBundle("~/bundles/coreplugins").Include(
+                        "~/Content/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
+                        "~/Content/assets/plugins/jquery-slider/jquery.sidr.min.js",
+                        "~/Content/assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js",
+                        "~/Content/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/pageplugins").Include(
+                        "~/Content/assets/plugins/pace/pace.min.js",
+                        "~/Content/assets/plugins/jquery-block-ui/jqueryblockui.js",
+                        "~/Content/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
+                        "~/Content/assets/plugins/jquery-inputmask/jquery.inputmask.min.js",
+                        "~/Content/assets/plugins/jquery-autonumeric/autoNumeric.js",
+                        "~/Content/assets/plugins/bootstrap-select2/select2.min.js",
+                        "~/Content/assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js",
+                        "~/Content/assets/js/core.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/forms").Include(
+                         "~/Content/assets/js/form_elements.js",
+                         "~/Content/assets/plugins/ios-switch/ios7-switch.js",
+                         "~/Content/assets/plugins/dropzone/dropzone.min.js"
+                        ));          
 
             #endregion
 
@@ -73,10 +91,10 @@ namespace VirtualDesign
                       "~/Content/assets/css/magic_space.css"));
 
             bundles.Add(new StyleBundle("~/Content/framework").Include(
-                      "~/Content/assets/plugins/boostrapv3/css/bootstrap.css",
-                      "~/Content/assets/plugins/boostrapv3/css/bootstrap-theme.css",
-                      "~/Content/assets/plugins/font-awesome/css/font-awesome.css",
-                      "~/Content/assets/css/animate.css",
+                      "~/Content/assets/plugins/boostrapv3/css/bootstrap.min.css",
+                      "~/Content/assets/plugins/boostrapv3/css/bootstrap-theme.min.css",
+                      "~/Content/assets/plugins/font-awesome/css/font-awesome.min.css",
+                      "~/Content/assets/css/animate.min.css",
                       "~/Content/assets/plugins/jquery-scrollbar/jquery.scrollbar.css"));
 
 

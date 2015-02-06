@@ -1,7 +1,7 @@
-﻿@using VirtualDesign.Models;
+﻿@using Microsoft.AspNet.Identity
+@using VirtualDesign.Models;
 
 @{
-    
     VirtualContext db = new VirtualContext();
     List<Category> Categories = db.Categories.ToList();
 }
@@ -17,9 +17,12 @@
         <ul class="sub-menu" id="menul">
             @foreach (var item in Categories)
             {
-                <li> <a href="@Url.Action("Details", "Category", new { id = item.CatergoryId })"> @Html.DisplayFor(modelItem => item.Name) </a> </li>
+                <li> <a id="@item.Name" href="@Url.Action("Details", "Category", new { id = item.CategoryId })"> @Html.DisplayFor(modelItem => item.Name) </a> </li>
             }
         </ul>
     </li>
-    <li class=""> <a href="@Url.Action("Create", "Model")"> <i class="fa fa-plus-circle"></i>  <span class="title">Add Model</span></a></li>
+    @if (Request.IsAuthenticated)
+    {
+        <li class=""> <a href="@Url.Action("Create", "Model")"> <i class="fa fa-plus-circle"></i>  <span class="title">Add Model</span></a></li>
+    }
 </ul>

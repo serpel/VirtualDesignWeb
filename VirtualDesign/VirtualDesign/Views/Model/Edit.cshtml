@@ -1,82 +1,133 @@
 ﻿@model VirtualDesign.Models.Model
 
 @{
+    //ViewBag.Categories = new SelectList(db.Categories, "CategoryId", "Name");
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<div class="page-title">
+    <i class="icon-custom-left"></i>
+    <h3>Edit <span class="semi-bold">Model</span></h3>
+</div>
 
-
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Model</h4>
-        <hr />
-        @Html.ValidationSummary(true)
-        @Html.HiddenFor(model => model.ModelId)
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Name)
-                @Html.ValidationMessageFor(model => model.Name)
+<div class="row">
+    <div class="col-md-6">
+        <div class="grid simple">
+            <div class="grid-title no-border">
+                <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
             </div>
-        </div>
+            <div class="grid-body no-border">
+                <br>
+                <div class="row">
+                    @using (Html.BeginForm("Edit", "Model", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">                            
+                                <div class="controls">
+                                    @Html.HiddenFor(model => model.ModelId)
+                                    @Html.HiddenFor(model => model.Username)
+                                    @Html.HiddenFor(model => model.CreatedDate)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="text-error">*</span>@Html.LabelFor(model => model.Name, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.Name, null, new { @class = "text-error" })
+                                <div class="controls">
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })  
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Description, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.Description, null, new { @class = "text-error" })
+                                <div class="controls">
+                                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CategoryId, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.CategoryId, null, new { @class = "text-error" })
+                                <div class="controls">
+                                    @Html.DropDownListFor(model => model.CategoryId, (IEnumerable<SelectListItem>)ViewBag.Categories, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Tags)
+                                <span class="help">e.g "chair, brown, big"</span>
+                                @Html.ValidationMessageFor(model => model.Tags, null, new { @class = "text-error" })
+                                @Html.TextBoxFor(model => model.Tags, new { @class = "span12 tagsinput", @data_role = "tagsinput" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PictureFile, new { @class = "form-label" })
+                                <p class="text-error">@Html.ValidationMessageFor(model => model.PictureFile, null, new { @class = "text-error" })</p>                                
+                                <div class="controls">
+                                    <input name="file" type="file" multiple />
+                                    @*Html.TextBoxFor(model => model.PictureFile, new { @type = "file" } )*@
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="text-error">*</span>@Html.LabelFor(model => model.ModelFile, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.ModelFile, null, new { @class = "text-error" })      
+                                <div class="controls">
+                                    <input name="modelFile" type="file"  multiple />
+                                    @*@Html.TextBoxFor(model => model.ModelFile, new { @type = "file" })*@
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.IsActive, new { @class = "form-label" })
+                                @Html.ValidationMessageFor(model => model.IsActive)
+                                <div class="radio radio-success">
+                                    @Html.RadioButtonFor(model => model.IsActive, true, new { @checked = "checked" })
+                                    <label for="IsActive">Yes</label>
+                                    @Html.RadioButtonFor(model => model.IsActive, false, new { @id = "IsDisable", @name="IsDisable" })
+                                    <label for="IsDisable">No</label>
+                                </div>
+                            </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Description)
-                @Html.ValidationMessageFor(model => model.Description)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.CategoryId, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.CategoryId)
-                @Html.ValidationMessageFor(model => model.CategoryId)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.PictureFile, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.PictureFile)
-                @Html.ValidationMessageFor(model => model.PictureFile)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.IsActive, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.IsActive)
-                @Html.ValidationMessageFor(model => model.IsActive)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.CreatedDate, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.CreatedDate)
-                @Html.ValidationMessageFor(model => model.CreatedDate)
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">                                   
+                                    <!--<input type="submit" value="Save" class="btn btn-info btn-cons" />-->
+                                    <!--<i class="fa fa-paste"></i>-->
+                                    <button class="btn btn-info btn-cons" type="submit"><i class="fa fa-paste"></i> Save</button>
+                                    <button id="btnCancel" class="btn btn-default btn-cons" type="button">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
             </div>
         </div>
     </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
 </div>
 
+
+
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnCancel').click(function (e) {
+                location.href = '@Url.Action("Index")';
+            });
+        });
+
+        jQuery.validator.setDefaults({
+            debug: true,
+            success: "valid"
+        });
+        $("#myForm").validate({
+            rules: {
+                file: {
+                    required: true,
+                    extension: "jpg|png|bmp|jpeg"
+                },
+                modelFile: {
+                    required: true,
+                    extension: "obj|md2|fbx"
+                }
+            }
+        });
+    </script>
 }

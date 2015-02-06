@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Configuration;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,10 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using VirtualDesign.Models;
+using System.Diagnostics;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+using System.IO;
 
 namespace VirtualDesign.Controllers
 {
@@ -18,14 +23,16 @@ namespace VirtualDesign.Controllers
         // GET: /Model/
         public async Task<ActionResult> Index()
         {
-            //DateTime date = DateTime.Now;
-            //String text = date.TimeAgo();
-
             var list = await db.Models.ToListAsync();
             ViewBag.column = 3;
-            // trick for the special grid of 3 columns and undefined rows
-            ViewBag.row = ViewBag.column <= list.Count ? (list.Count / ViewBag.column) : 1;
             return View(list);
+        }
+
+        //one year facebook cache 
+        [OutputCache(Duration = 60 * 60 * 24 * 365, Location = System.Web.UI.OutputCacheLocation.Any)]
+        public ActionResult FacebookChannel()
+        {
+            return View();
         }
 
         // GET: /Model/Details/5
@@ -40,13 +47,14 @@ namespace VirtualDesign.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.Categories = new SelectList(db.Categories, "CategoryId", "Name");
             return View(model);
         }
 
         // GET: /Model/Create
         public ActionResult Create()
         {
-            TempData["Categories"] = db.Categories.ToList();
+            ViewBag.Categories = new SelectList(db.Categories, "CategoryId", "Name");
             return View();
         }
 
@@ -55,30 +63,39 @@ namespace VirtualDesign.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include="ModelId,Name,Description,CategoryId,PictureFile,IsActive,CreatedDate")] Model model)
+        public async Task<ActionResult> Create([Bind(Include = "ModelId,Name,UserName,Description,CategoryId,Tags,PictureFile,ModelFile")] Model model, HttpPostedFileBase file, HttpPostedFileBase modelFile)
         {
             if (ModelState.IsValid)
             {
+                model.Likes = 0;
+                model.IsActive = true;
+                model.CreatedDate = DateTime.Now;
+                model.PictureFile = await UploadService.UploadFileAsync("images", file);
+                model.ModelFile = await UploadService.UploadFileAsync("models", modelFile);
                 db.Models.Add(model);
+
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
+            ViewBag.Categories = new SelectList(db.Categories, "CategoryId", "Name");
 
             return View(model);
         }
-
+     
         // GET: /Model/Edit/5
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
+            }      
             Model model = await db.Models.FindAsync(id);
             if (model == null)
             {
                 return HttpNotFound();
             }
+            ViewBag.Categories = new SelectList(db.Categories, "CategoryId", "Name");
+
             return View(model);
         }
 
@@ -87,13 +104,19 @@ namespace VirtualDesign.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include="ModelId,Name,Description,CategoryId,PictureFile,IsActive,CreatedDate")] Model model)
+        public async Task<ActionResult> Edit([Bind(Include = "ModelId,Username,Name,Description,CategoryId,Tags,PictureFile,ModelFile,IsActive,CreatedDate")] Model model, HttpPostedFileBase file, HttpPostedFileBase modelFile)
         {
             if (ModelState.IsValid)
             {
+                model.PictureFile = await UploadService.UploadFileAsync("images", file);
+                model.ModelFile = await UploadService.UploadFileAsync("models", modelFile);
                 db.Entry(model).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Categories = new SelectList(db.Categories, "CategoryId", "Name");
             }
             return View(model);
         }
@@ -123,6 +146,9 @@ namespace VirtualDesign.Controllers
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+
+
 
         protected override void Dispose(bool disposing)
         {
